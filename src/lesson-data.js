@@ -1,0 +1,75 @@
+export const lesson = {
+  number: "8.4.3",
+  title: "Scrum Artifacts: What the Team Carries and Delivers",
+  screens: [
+    {
+      id: "hook", tab: "What done means", type: "reveal", image: "scrum-artifacts",
+      heading: "What does “done” actually mean?",
+      open: "Not “done for now.” Not “done, probably.” Actually, truly done. Ready to hand to a customer. Most teams think they know the answer, until you ask them to write it down. Then you get five different answers from five different people.",
+      cta: "Open the trunk",
+      reveal: { title: "What the team carries", image: "scrum-artifacts", text: "Scrum solves this with three things the team carries: a full list of everything possible, a plan for right now, and something real to hand over. Each one comes with its own promise attached, a way of saying exactly what “done” means at that level. These are Scrum’s artifacts. Let’s open the trunk." },
+    },
+    {
+      id: "product", tab: "Product Backlog", type: "reveal", image: "product-backlog",
+      heading: "This is the long scroll: every stop the trip could ever make, ordered so the most valuable ones sit at the top.",
+      open: "",
+      cta: "Unroll the backlog",
+      reveal: { title: "Product Backlog → Product Goal", image: "product-backlog", text: "It’s a single, ordered list of everything needed to improve the product. And it’s the single source of work for the whole team. No side lists. No secret requests slipped in from outside. If it’s not on the scroll, it’s not happening. That scroll is only ever managed by one person, the Product Owner. Every artifact carries a commitment — a promise that keeps it focused. For the Product Backlog, that promise is the Product Goal: where the product is ultimately heading, its future state. A team works toward one Product Goal at a time. They finish it, or they abandon it, before starting a new one. No juggling two destinations at once." },
+    },
+    {
+      id: "sprint", tab: "Sprint Backlog", type: "reveal", image: "sprint-backlog",
+      heading: "This is the checklist for just this stretch of the trip.",
+      open: "",
+      cta: "Open the checklist",
+      reveal: { title: "Sprint Backlog → Sprint Goal", image: "sprint-backlog", text: "It has three parts. The why: the reason this stretch matters. The what: the items pulled from the Product Backlog, small enough to finish within the Sprint. And the how: the actual plan for getting it done. The Developers build this checklist, for themselves — their real-time, living plan, updated constantly as they learn more during the Sprint. The commitment attached to it is the Sprint Goal: the single, focused reason this stretch of the journey matters, keeping everyone pulling in the same direction instead of scattering effort across ten different tasks. The plan for how to get there can flex — if the road is blocked, the crew can take a different route. But the goal, the reason for the stretch, stays fixed." },
+    },
+    {
+      id: "increment", tab: "Increment", type: "reveal", image: "increment-done",
+      heading: "This is the wrapped package: something real, handed over at the end of the stretch.",
+      open: "",
+      cta: "Open the package",
+      reveal: { title: "A concrete step toward the Product Goal", image: "increment-done", text: "An Increment is a concrete step toward the Product Goal. It has to be usable. Not a sketch. Not a promise. Something the customer can actually see, feel, and touch. Each Increment builds on every Increment before it. And here’s a small but important detail: a team can deliver more than one Increment within a single Sprint. But by the end of the Sprint, all of them come together and get presented at once." },
+    },
+    {
+      id: "done", tab: "Definition of Done", type: "reveal", image: "increment-done",
+      heading: "So how does the team know a package is actually ready to hand over?",
+      open: "",
+      cta: "Reveal the checklist",
+      reveal: { title: "The Definition of Done", image: "increment-done", text: "That’s the Definition of Done — the commitment attached to the Increment, and the answer to the question this lesson opened with. It’s a checklist of quality standards: things like being tested, reviewed, and approved. If an item meets every point on that checklist, it becomes a real Increment. If it doesn’t, it’s not done. It’s not shown to the customer. It simply rolls back onto the scroll, the Product Backlog, for a future stretch. If your organization already has a standard Definition of Done, every team must follow it. If there isn’t one, the team can create its own. And when several teams share one product, they must agree on a shared Definition of Done together." },
+      quiz: {
+        question: "Scenario: A team completes a feature, but it hasn’t been through the organization’s standard testing and review process. A developer argues it should still count as an Increment since “the customer would probably be happy with it.” What is the correct outcome here?",
+        answers: ["It counts as an Increment, since customer satisfaction is what ultimately matters", "It does not count as an Increment — without meeting the Definition of Done, it rolls back onto the Product Backlog for a future Sprint", "It counts as a partial Increment, to be finished in the next Sprint", "The team should vote on whether it counts, since Definition of Done is a team preference"],
+        correct: 1,
+        correctFeedback: "Correct! The Definition of Done isn’t a matter of opinion or guessed customer reaction — if the checklist isn’t fully met, the work simply isn’t an Increment yet. It goes back onto the Product Backlog rather than being shown to the customer.",
+        incorrectFeedback: "Reconsider — there’s no such thing as a “partial Increment,” a team vote doesn’t override the Definition of Done, and guessing at customer satisfaction doesn’t substitute for actually meeting the checklist.",
+      },
+    },
+    {
+      id: "commitments", tab: "Three commitments", type: "explore", image: "scrum-artifacts",
+      heading: "Let’s tie the three together, because this pairing is worth memorizing.",
+      open: "",
+      items: [
+        { title: "Product Backlog → Product Goal", image: "product-backlog", text: "The full ordered list of everything the product could become, carrying the promise of where it’s ultimately heading." },
+        { title: "Sprint Backlog → Sprint Goal", image: "sprint-backlog", text: "The Developers’ living plan for right now, carrying the single focused reason this stretch matters." },
+        { title: "Increment → Definition of Done", image: "increment-done", text: "The real, usable step delivered along the way, carrying the checklist that decides whether it’s actually finished." },
+      ],
+    },
+    {
+      id: "takeaways", tab: "Key takeaways", type: "reveal", image: "scrum-artifacts",
+      heading: "Before the checks, four things to lock in.",
+      open: "",
+      cta: "Review the takeaways",
+      reveal: {
+        title: "Before the checks, four things to lock in.", image: "scrum-artifacts",
+        text: "One. The Product Backlog is the single, ordered source of work, carrying the Product Goal. Two. The Sprint Backlog is the Developers’ living plan for the Sprint, carrying the Sprint Goal. Three. The Increment is a real, usable step toward the Product Goal. Four. The Definition of Done decides whether work truly counts as an Increment, or rolls back to the Product Backlog.",
+        bullets: [
+          "Product Backlog: single ordered source of work, managed only by the Product Owner, carries the Product Goal",
+          "Sprint Backlog: Developers’ own living plan (Why/What/How), carries the Sprint Goal — the plan can flex, the goal stays fixed",
+          "Increment: a real, usable step toward the Product Goal; multiple increments in a Sprint are presented together at the end",
+          "Definition of Done: the quality checklist that decides if work is truly an Increment or rolls back to the Product Backlog",
+          "One Product Goal at a time; org-wide Definition of Done must be followed if one exists; shared products need a shared Definition of Done",
+        ],
+      },
+    },
+  ],
+};
